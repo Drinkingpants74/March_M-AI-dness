@@ -1,4 +1,4 @@
-# March-M-AI-dness
+# March M-AI-dness
 A Simply Python Script to use an LLM to predict the NCAA Men's Basketball Champion
 
 ## How it Works
