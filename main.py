@@ -6,7 +6,6 @@ from openai import OpenAI
 # OFF DEVICE: IP Address of Other Device (192.168.1.x)
 baseURL = "http://<IP ADDRESS>:8080"
 
-
 df = pd.read_csv('Bracket_Teams.csv')
 
 records = df.to_dict(orient='records')
@@ -20,7 +19,7 @@ client = None
 system_prompt = """You are a College Basketball Expert. You will be given two teams, and their statistics over a season, and you determine which team should win on a neutral court.
 
 When you have decided which team should win, you will output ONLY THE NAME OF THE WINNING TEAM. For example, if you were given "TeamA" and "TeamB" and you decide "TeamA" should win, you will simply reply with "TeamA".
-Do no reply with any extra information, or a justification of your pick, just pick the team."""
+Do no reply with any punctuation, extra information, or a justification of your pick, just pick the team."""
 
 def get_authorized():
     global client, baseURL
@@ -40,7 +39,7 @@ def send_message(messages):
         temperature=0.8,
         top_p=0.95,
         frequency_penalty=0.0,
-        seed=-1,
+        seed=74,
         extra_body={
             "min_p": 0.05,
             "top_k": 40,
@@ -99,16 +98,6 @@ round_1 = [
     build_matchup("UCLA", "UCF"),
     build_matchup("Connecticut", "Furman"),
 
-    # Midwest
-    build_matchup("Michigan", simulate_winner("Maryland-Baltimore County", "Howard")),
-    build_matchup("Georgia", "Saint Louis"),
-    build_matchup("Texas Tech", "Akron"),
-    build_matchup("Alabama", "Hofstra"),
-    build_matchup("Tennessee", simulate_winner("Miami (OH)", "Southern Methodist")),
-    build_matchup("Virginia", "Wright State"),
-    build_matchup("Kentucky", "Santa Clara"),
-    build_matchup("Iowa State", "Tennessee State"),
-
     # South
     build_matchup("Florida", simulate_winner("Prairie View A&M", "Lehigh")),
     build_matchup("Clemson", "Iowa"),
@@ -118,6 +107,16 @@ round_1 = [
     build_matchup("Illinois", "Pennsylvania"),
     build_matchup("Saint Mary's", "Texas A&M"),
     build_matchup("Houston", "Idaho"),
+
+    # Midwest
+    build_matchup("Michigan", simulate_winner("Maryland-Baltimore County", "Howard")),
+    build_matchup("Georgia", "Saint Louis"),
+    build_matchup("Texas Tech", "Akron"),
+    build_matchup("Alabama", "Hofstra"),
+    build_matchup("Tennessee", simulate_winner("Miami (OH)", "Southern Methodist")),
+    build_matchup("Virginia", "Wright State"),
+    build_matchup("Kentucky", "Santa Clara"),
+    build_matchup("Iowa State", "Tennessee State"),
 
     # West
     build_matchup("Arizona", "Long Island University"),
