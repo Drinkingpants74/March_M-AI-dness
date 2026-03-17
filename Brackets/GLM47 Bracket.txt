@@ -1,6 +1,6 @@
 [('Duke', 'Ohio State'), ("St. John's (NY)", 'Kansas'), ('Louisville', 'Michigan State'), ('UCLA', 'Connecticut'), ('Michigan', 'Saint Louis'), ('Texas Tech', 'Alabama'), ('Tennessee', 'Virginia'), ('Kentucky', 'Iowa State'), ('Florida', 'Iowa'), ('Vanderbilt', 'Nebraska'), ('Virginia Commonwealth', 'Illinois'), ("Saint Mary's", 'Houston'), ('Arizona', 'Utah State'), ('Wisconsin', 'Arkansas'), ('Brigham Young', 'Gonzaga'), ('Miami (FL)', 'Purdue')]
 [('Duke', "St. John's (NY)"), ('Michigan State', 'Connecticut'), ('Michigan', 'Alabama'), ('Tennessee', 'Iowa State'), ('Florida', 'Vanderbilt'), ('Illinois', 'Houston'), ('Arizona', 'Arkansas'), ('Gonzaga', 'Purdue')]
 [('Duke', 'Michigan State'), ('Michigan', 'Iowa State'), ('Florida', 'Illinois'), ('Arizona', 'Purdue')]
-[('Duke', 'Michigan'), ('Florida', 'Arizona')]
-[('Michigan', 'Arizona')]
+[('Duke', 'Florida'), ('Michigan', 'Arizona')]
+[('Duke', 'Michigan')]
 Michigan
