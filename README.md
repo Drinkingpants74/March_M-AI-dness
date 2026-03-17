@@ -24,3 +24,7 @@ The Script outputs the next series of Matchups. So as an example of what that lo
 When there are no matchups left, it will output just the final team name.
 
 If you'd like to see an example of what the output looks like in it's entirety, you can check inside the `Brackets` folder which houses the outputs of the model named in the file.
+
+
+## Credits
+2025-26 NCAA Men's Basketball Stats provided by `sports-reference.com`
