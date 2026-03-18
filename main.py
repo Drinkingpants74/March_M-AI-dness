@@ -108,16 +108,6 @@ round_1 = [
     build_matchup("Saint Mary's", "Texas A&M"),
     build_matchup("Houston", "Idaho"),
 
-    # Midwest
-    build_matchup("Michigan", simulate_winner("Maryland-Baltimore County", "Howard")),
-    build_matchup("Georgia", "Saint Louis"),
-    build_matchup("Texas Tech", "Akron"),
-    build_matchup("Alabama", "Hofstra"),
-    build_matchup("Tennessee", simulate_winner("Miami (OH)", "Southern Methodist")),
-    build_matchup("Virginia", "Wright State"),
-    build_matchup("Kentucky", "Santa Clara"),
-    build_matchup("Iowa State", "Tennessee State"),
-
     # West
     build_matchup("Arizona", "Long Island University"),
     build_matchup("Villanova", "Utah State"),
@@ -127,6 +117,16 @@ round_1 = [
     build_matchup("Gonzaga", "Kennesaw State"),
     build_matchup("Miami (FL)", "Missouri"),
     build_matchup("Purdue", "Queens (NC)"),
+
+    # Midwest
+    build_matchup("Michigan", simulate_winner("Maryland-Baltimore County", "Howard")),
+    build_matchup("Georgia", "Saint Louis"),
+    build_matchup("Texas Tech", "Akron"),
+    build_matchup("Alabama", "Hofstra"),
+    build_matchup("Tennessee", simulate_winner("Miami (OH)", "Southern Methodist")),
+    build_matchup("Virginia", "Wright State"),
+    build_matchup("Kentucky", "Santa Clara"),
+    build_matchup("Iowa State", "Tennessee State"),
 ]
 
 results_round_1 = simulate_tournament_rounds(round_1)

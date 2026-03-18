@@ -1,0 +1,6 @@
+[('Duke', 'Ohio State'), ("St. John's (NY)", 'Kansas'), ('Louisville', 'Michigan State'), ('UCLA', 'Connecticut'), ('Florida', 'Iowa'), ('Vanderbilt', 'Nebraska'), ('North Carolina', 'Illinois'), ("Saint Mary's", 'Houston'), ('Michigan', 'Saint Louis'), ('Texas Tech', 'Alabama'), ('Miami (OH)', 'Virginia'), ('Santa Clara', 'Iowa State'), ('Arizona', 'Utah State'), ('High Point', 'Arkansas'), ('Brigham Young', 'Gonzaga'), ('Miami (FL)', 'Purdue')]
+[('Duke', "St. John's (NY)"), ('Michigan State', 'Connecticut'), ('Florida', 'Vanderbilt'), ('Illinois', "Saint Mary's"), ('Michigan', 'Alabama'), ('Virginia', 'Iowa State'), ('Arizona', 'High Point'), ('Gonzaga', 'Purdue')]
+[('Duke', 'Michigan State'), ('Florida', "Saint Mary's"), ('Michigan', 'Iowa State'), ('Arizona', 'Gonzaga')]
+[('Duke', 'Florida'), ('Michigan', 'Arizona')]
+[('Duke', 'Arizona')]
+Duke
